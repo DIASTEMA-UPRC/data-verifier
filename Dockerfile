@@ -19,4 +19,6 @@ WORKDIR /app
 
 COPY --from=builder /app/main .
 
+EXPOSE 5000
+
 ENTRYPOINT ./main
